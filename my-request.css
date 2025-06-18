@@ -1,0 +1,13 @@
+body {
+  background: #f2f5f7;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}

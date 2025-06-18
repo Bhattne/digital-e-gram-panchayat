@@ -1,0 +1,138 @@
+/* Base Font & Reset */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background 0.4s, color 0.4s;
+}
+
+/* Dark Mode Support */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+body.dark-mode .btn-light {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode .bg-light {
+  background-color: #1f1f1f !important;
+}
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 20px;
+}
+
+/* Section Headings */
+.about h2,
+.news-section h2,
+.map-section h2 {
+  font-weight: bold;
+  color: #333;
+}
+
+.about p,
+.card-text {
+  color: #555;
+  font-size: 1.05rem;
+}
+
+/* Cards */
+.card {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  color: #777;
+  font-size: 0.95rem;
+  border-top: 1px solid #ddd;
+}
+
+/* Dark Mode Toggle Button */
+.dark-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 999;
+}
+
+.dark-toggle button {
+  font-size: 0.9rem;
+}
+/* Dark Mode Styling */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Update all sections */
+body.dark-mode .hero-section {
+  background: linear-gradient(135deg, #1c1c1c, #2c2c2c);
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  border-color: #333;
+  color: #f0f0f0;
+}
+
+body.dark-mode .card-title,
+body.dark-mode .card-text {
+  color: #f0f0f0;
+}
+
+body.dark-mode .btn-light {
+  background-color: #333;
+  color: #f0f0f0;
+  border: 1px solid #777;
+}
+
+body.dark-mode .btn-outline-primary {
+  color: #f0f0f0;
+  border-color: #f0f0f0;
+}
+
+body.dark-mode .btn-outline-light {
+  border-color: #f0f0f0;
+  color: #f0f0f0;
+}
+
+body.dark-mode footer {
+  background-color: #1a1a1a;
+  color: #ccc;
+}
+
+/* Map background contrast fix */
+body.dark-mode .map-section iframe {
+  filter: grayscale(100%) invert(90%) contrast(110%);
+}
