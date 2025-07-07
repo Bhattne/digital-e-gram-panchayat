@@ -9,94 +9,102 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="landing.css" />
-  <link rel="stylesheet" href="landing-extra.css" />
+  <!-- AOS & Custom Styles -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="landing.css" />
 </head>
 <body>
 
-  <!-- Dark Mode Toggle -->
-  <div class="dark-toggle">
-    <button id="themeToggle" class="btn btn-outline-light">Toggle Dark Mode</button>
+<!-- Navbar -->
+<nav class="d-flex justify-content-between align-items-center navbar-custom">
+  <a href="#about" class="btn btn-explore tilt">Explore</a>
+  <div class="d-flex align-items-center">
+    <a class="nav-link" href="#about">About</a>
+    <a class="nav-link" href="#news">News</a>
+    <a class="nav-link" href="#map">Map</a>
+    <a href="login.html" class="btn btn-login tilt">Login</a>
+    <a href="register.html" class="btn btn-signup tilt">Sign up</a>
   </div>
+</nav>
 
-  <!-- Hero Section -->
-  <div class="hero-section animated-background">
-    <div class="floating-icons">
-      <img src="https://cdn-icons-png.flaticon.com/512/4305/4305611.png" alt="Village Icon" />
-      <img src="https://cdn-icons-png.flaticon.com/512/1146/1146869.png" alt="Water Tap" />
-      <img src="https://cdn-icons-png.flaticon.com/512/883/883407.png" alt="Eco Leaf" />
-      <img src="https://cdn-icons-png.flaticon.com/512/3784/3784184.png" alt="Health Icon" />
-    </div>
-    <div class="hero-content text-center text-white">
-      <h1 class="display-5 fw-bold tilt" data-aos="fade-up">🌾 E-Gram Panchayat Portal</h1>
-      <p class="lead" data-aos="fade-up" data-aos-delay="200">Empowering Villages with Digital Governance</p>
-      <a href="register.html" class="btn btn-light px-4 py-2 mt-3 tilt" data-aos="zoom-in" data-aos-delay="400">Get Started</a>
-    </div>
+<!-- Hero Section -->
+<div class="hero-section animated-background">
+  <div class="floating-icons">
+  
   </div>
+  <div class="hero-content text-center text-white">
+    <h1 class="display-5 fw-bold tilt" data-aos="fade-up">🌾 E-Gram Panchayat Portal</h1>
+    <p class="lead" data-aos="fade-up" data-aos-delay="200">Empowering Villages with Digital Governance</p>
+    <a href="register.html" class="btn btn-light px-4 py-2 mt-3 tilt" data-aos="zoom-in" data-aos-delay="400">Get Started</a>
+  </div>
+</div>
 
-  <!-- About Section -->
-  <section class="about py-5 bg-light" id="about">
-    <div class="container text-center" data-aos="fade-up">
-      <h2>Digital India Starts from the Grassroots</h2>
-      <p class="mt-3">Raise complaints, track progress, and access services digitally — transparent, efficient, and people-friendly.</p>
-      <a href="login.html" class="btn btn-outline-primary mt-3 tilt">Already Registered? Login</a>
-    </div>
-  </section>
+<!-- About Section -->
+<section class="about py-5 bg-light" id="about">
+  <div class="container text-center" data-aos="fade-up">
+    <h2>Digital India Starts from the Grassroots</h2>
+    <p class="mt-3">Raise complaints, track progress, and access services digitally — transparent, efficient, and people-friendly.</p>
+    <a href="login.html" class="btn btn-outline-primary mt-3 tilt">Already Registered? Login</a>
+  </div>
+</section>
 
-  <!-- News Section -->
-  <section class="news-section py-5">
-    <div class="container">
-      <h2 class="text-center mb-4" data-aos="fade-down">📢 Latest News & Updates</h2>
-      <div class="row g-4">
-
-        <!-- Card 1: Rohini -->
-        <div class="col-md-6" data-aos="fade-left">
-          <div class="card shadow-sm h-100">
-            <div class="card-body text-center">
-              <h5 class="card-title tilt">🧑‍⚕️ New Health Center in Rohini</h5>
-              <p class="card-text">Rohini village to get a digital health care center under Smart Panchayat scheme.</p>
-              <a href="news-rohini.html" class="btn btn-light mt-2">Read More</a>
-            </div>
+<!-- News Section -->
+<section class="news-section py-5" id="news">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-down">📢 Latest News & Updates</h2>
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card shadow-sm h-100 tilt">
+          <div class="card-body text-center">
+            <h5 class="card-title">🧑‍⚕️ New Health Center in Rohini</h5>
+            <p class="card-text">Digital health care center launched in Rohini under Smart Panchayat scheme.</p>
+            <a href="news-rohini.html" class="btn btn-light mt-2">Read More</a>
           </div>
         </div>
-
-        <!-- Card 2: Kheda -->
-        <div class="col-md-6" data-aos="fade-right">
-          <div class="card shadow-sm h-100">
-            <div class="card-body text-center">
-              <h5 class="card-title tilt">🌱 Solar Lights in Kheda</h5>
-              <p class="card-text">Street lights powered by solar installed in Kheda Gram Panchayat.</p>
-              <a href="news-kheda.html" class="btn btn-light mt-2">Read More</a>
-            </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card shadow-sm h-100 tilt">
+          <div class="card-body text-center">
+            <h5 class="card-title">🌱 Solar Lights in Kheda</h5>
+            <p class="card-text">Street lights powered by solar installed in Kheda Gram Panchayat.</p>
+            <a href="news-kheda.html" class="btn btn-light mt-2">Read More</a>
           </div>
         </div>
-
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Map Section -->
-  <section class="map-section py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4" data-aos="fade-up">📍 Locate Our Villages</h2>
-      <div class="ratio ratio-16x9" data-aos="zoom-in">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224309.7923277572!2d78.96288!3d29.9670895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390948d377db9a23%3A0xdea15de3f1c1ea58!2sDehradun%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1687383542733!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
+<!-- Map Section -->
+<section class="map-section py-5 bg-light" id="map">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-up">📍 Locate Our Villages</h2>
+    <div class="ratio ratio-16x9" data-aos="zoom-in">
+      <iframe src="https://www.google.com/maps/embed?..." style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="text-center py-4 text-muted bg-white">
-    &copy; 2025 E-Gram Panchayat • Designed with ❤️ for Rural Bharat
-  </footer>
+<!-- Footer -->
+<footer class="text-center py-4 text-muted bg-white">
+  &copy; 2025 E-Gram Panchayat • Designed with ❤️ for Rural Bharat
+</footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.3/dist/vanilla-tilt.min.js"></script>
-  <script src="tilt.js"></script>
-  <script src="landing.js"></script>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.3/dist/vanilla-tilt.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  window.onload = function () {
+    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+      max: 15,
+      speed: 400,
+      scale: 1.05,
+      glare: true,
+      "max-glare": 0.2
+    });
+    AOS.init({ duration: 1000, once: true });
+  };
+</script>
 </body>
 </html>

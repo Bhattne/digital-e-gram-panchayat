@@ -1,43 +1,78 @@
-
-body {
-  background: linear-gradient(to right, #56ccf2, #2f80ed);
-  font-family: 'Poppins', sans-serif;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.register-card {
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://blog.ipleaders.in/wp-content/uploads/2021/08/1594446411.jpg'),
+              url('https://static.vecteezy.com/system/resources/previews/025/337/370/original/illustrated-map-of-india-with-states-and-territories-and-administrative-divisions-and-neighbouring-countries-editable-and-clearly-labeled-layers-vector.jpg'),
+              url('https://businesssystemguide.com/wp-content/uploads/2022/12/Digital-Seva-Portal.jpg'),
+              url('https://images.nationalgeographic.org/image/upload/v1638884690/EducationHub/photos/bengali-village.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: 400px;
-  border-radius: 16px;
-  animation: fadeIn 0.8s ease;
-  background: #ffffff;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 1;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to   { opacity: 1; transform: translateY(0); }
+.register-box {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  border-radius: 8px;
+  width: 320px;
+  text-align: center;
+  color: white;
 }
 
-input::placeholder {
-  color: #aaa;
+.register-box h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
 }
 
-button:hover {
-  background-color: #1c60d6;
+.register-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
 }
 
-.redirect-text {
-  font-size: 14px;
-  color: #333;
+.register-box button {
+  width: 100%;
+  padding: 12px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  margin-top: 15px;
+  cursor: pointer;
 }
 
-.redirect-text a {
-  color: #2f80ed;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.redirect-text a:hover {
+.register-box a {
+  color: #ddd;
   text-decoration: underline;
+  font-size: 14px;
 }
