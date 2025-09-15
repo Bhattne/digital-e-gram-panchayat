@@ -1,0 +1,90 @@
+/* css/form.css or css/register.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+   
+   background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+  width: 350px;
+  text-align: center;
+  color: white;
+}
+
+.register-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #edebeb;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+/* When input is clicked/focused */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border: 2px solid #007bff;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+p {
+  text-align: center;
+  margin-top: 15px;
+  color: #fcfafa;
+}
+
+p a {
+  color: #020a13;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+#message {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
