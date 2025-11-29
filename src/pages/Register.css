@@ -1,0 +1,65 @@
+/* Register.css */
+
+.auth-container {
+  width: 420px;
+  margin: 70px auto;
+  padding: 35px;
+  background: #9c0000;
+  border-radius: 12px;
+  box-shadow: 0px 5px 25px rgba(27, 9, 9, 0.15);
+}
+
+.auth-container h2 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background: #804893;
+  color: rgb(186, 35, 35);
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.auth-btn:hover {
+  background: #6c5392;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: white;
+  border: 2px solid #dadce0;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.google-btn img {
+  width: 22px;
+  height: 22px;
+}
+
+.google-btn:hover {
+  background: #f8f9fa;
+} 
