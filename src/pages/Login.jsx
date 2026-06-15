@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { useAuth } from "../contexts/AuthContext";
 import { Link, useNavigate, useLocation } from "react-router-dom"; // ⬅ added useLocation
-import "../components/Auth.css";
+import "../components/auth.css";
 import { useLanguage } from "../contexts/LanguageContext";
 
 // ⭐ ONLY ONE FIX — THIS WAS MISSING
