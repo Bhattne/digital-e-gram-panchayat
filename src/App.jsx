@@ -60,12 +60,6 @@ export default function App() {
           }
         />
 
-        {/*
-          ❌ Pehle yahan <AdminCard ... /> likha tha
-          Jo galat tha, kyunki AdminCard yahan import nahi hota.
-          AI card sirf AdminDashboard.jsx ke andar hona chahiye.
-        */}
-
         {/* Citizen Actions */}
         <Route
           path="/electricity"
@@ -167,10 +161,11 @@ export default function App() {
           }
         />
 
+        {/* AI Assistant — available to citizens AND admins */}
         <Route
           path="/admin/ai-assistant"
           element={
-            <ProtectedRoute adminOnly>
+            <ProtectedRoute>
               <AiChatAssistant />
             </ProtectedRoute>
           }
